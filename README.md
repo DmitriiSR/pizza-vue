@@ -1,5 +1,8 @@
 # pizza-test
 
+Перед запуском нужно поменять URL в переменной VUE_APP_PROXY в файле .env.
+URL нужно взять на сайте https://justcors.com/ из средней строки
+
 ## Project setup
 ```
 npm install
