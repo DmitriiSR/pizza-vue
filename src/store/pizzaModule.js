@@ -120,7 +120,7 @@ export const pizzaModule = {
                     }
                 }
             })
-        }
+        },
     },
     actions: {
         async fetchPizzas({commit}) {
@@ -197,6 +197,20 @@ export const pizzaModule = {
             }
         },
         async createPizza({state, dispatch, commit}) {
+            if (state.pizza.name === '') {
+                alert('Заполните Название пиццы!');
+                return
+            } else if (state.pizza.comment === '') {
+                alert('Заполните Описание вкуса!');
+                return
+            } else if (state.pizza.weight === 0) {
+                alert('Заполните Вес пиццы!');
+                return
+            } else if (state.pizza.author_phone === '') {
+                alert('Заполните Телефон автора!');
+                return
+            }
+
             commit('toggleCreate');
             commit('setLoadingPizza', true);
             try {
@@ -299,6 +313,19 @@ export const pizzaModule = {
             }
         },
         async updatePizza({state, commit, dispatch}) {
+            if (state.pizza.name === '') {
+                alert('Заполните Название пиццы!');
+                return
+            } else if (state.pizza.comment === '') {
+                alert('Заполните Описание вкуса!');
+                return
+            } else if (state.pizza.weight === 0) {
+                alert('Заполните Вес пиццы!');
+                return
+            } else if (state.pizza.author_phone === '') {
+                alert('Заполните Телефон автора!');
+                return
+            }
             commit('toggleConfirm');
             commit('toggleEdit');
             try {
@@ -341,6 +368,6 @@ export const pizzaModule = {
            if (state.isEdit) {
                commit('setClearPizza');
            }
-        }
+        },
     },
 }
