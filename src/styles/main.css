@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Open+Sans:wght@400;500;600&family=Paprika&family=Poppins:wght@400;500&family=Ubuntu:ital@1&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #3F3F3F;
+}
+button, button:hover {
+    outline: none;
+    border: none;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 24px;
+}
+h2 {
+    font-weight: 600;
+    font-size: 18px;
+}
+h3 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.header {
+    width: 100%;
+    height: 95px;
+    background-color: #008155;
+}
+.main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.btn:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.btn-primary {
+    background-color: #008155;
+    color: #ffffff;
+}
+
+.btn-danger {
+    background-color: #EC5F5F;
+    color: #ffffff;
+}
+
+.btn-close {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    background-image: url("../assets/images/icons/close.svg");
+    background-size: 13px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.button-edit {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    background-image: url("../assets/images/icons/edit.svg");
+    background-size: 13px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.button-delete {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    background-image: url("../assets/images/icons/delete.svg");
+    background-size: 13px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+thead {
+    background-color: #F2F2F2;
+
+}
+tr {
+    border-left: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+}
+th {
+    padding: 10px 15px;
+    border-right: 1px solid #F2F2F2;
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: #737D8A;
+}
+td {
+    padding: 15px;
+    border-right: 1px solid #F2F2F2;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.is-text-center {
+    text-align: center;
+}
+.is-text-secondary {
+    color: #737D8A;
+}
+
+.loading {
+    padding-top: 30px;
+    text-align: center;
+    color: #737D8A;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.modal-dialog {
+    width: 530px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 24px 22px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    z-index: 10;
+    cursor: default;
+}
+.modal-header {
+    position: relative;
+}
+
+.modal-header .btn-close {
+    position: absolute;
+    right: -12px;
+    top: -28px;
+}
+
+.modal-body {
+    margin-top: 12px;
+}
+
+.modal-body p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #737D8A;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+.modal-footer button:first-child {
+    margin-right: 12px;
+}
+
+label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+label > span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737D8A;
+}
+
+input[type="text"],label input[type="number"], select, textarea {
+    margin-top: 8px;
+    padding: 5px 8px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    outline: none;
+}
+textarea {
+    resize: none;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #3F3F3F;
+}
+
+.row {
+    display: flex;
+    flex-grow: 2;
+}
+
+.row.is-center {
+    justify-content: center;
+}
+
+
+
+
