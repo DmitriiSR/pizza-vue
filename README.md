@@ -1,6 +1,7 @@
 # pizza-test
 
-Перед запуском нужно поменять URL в переменной VUE_APP_PROXY в файле .env.
+Перед запуском нужно поменять URL в переменной VUE_APP_PROXY в файле .env.local
+
 URL нужно взять на сайте https://justcors.com/ из средней строки
 
 ## Project setup
